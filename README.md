@@ -44,3 +44,13 @@ _Jawaban:_
     - Membuat array dengan kapasitas 3 : new Mahasiswa3[3] : membuar array yang bisa menampung 3 object Mahasiswa3.
     - Baris ini belum membuat object Mahasiswa3-nya.
 3.  Pada class Mahasiswa3 memang tidak menuliskan konstruktor secara langsung. Namun, Java otomatis membuat default constructor (konstruktor kosong). Walaupun tidak ditulis, konstruktor tetap ada karena dibuat otomatis oleh Java.
+4.  Yang dilakukan oleh program tersebut adalah : 
+    - Membuat object baru Mahasiswa3
+        - new Mahasiswa()
+        - Lalu disimpan di indeks ke-0 array
+    - Mengisi nilai atribut object tersebut, yaitu : 
+        - nim diisi "244107060033"
+        - nama diisi "AGNES TITANIA KINANTI"
+        - kelas diisi "SIB-1E"
+        - ipk diisi  3.75
+    Jadi, kode tersebut membuat satu object Mahasiswa3 di array indeks 0 dan mengisi data (atribut) mahasiswa tersebut.
