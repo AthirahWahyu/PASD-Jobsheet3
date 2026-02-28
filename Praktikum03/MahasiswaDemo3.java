@@ -32,5 +32,5 @@ public class MahasiswaDemo3 {
         }
         sc.close();
     }
-}
+} 
 
