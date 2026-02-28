@@ -54,3 +54,7 @@ _Jawaban:_
         - kelas diisi "SIB-1E"
         - ipk diisi  3.75
     Jadi, kode tersebut membuat satu object Mahasiswa3 di array indeks 0 dan mengisi data (atribut) mahasiswa tersebut.
+5.  Alasan class Mahasiswa dan MahasiswaDemo dipisahkan pada uji coba 3.2 adalah agar kode lebih terstruktur dan mudah dikelola.
+    Penjelasan : 
+    - Class Mahasiswa : Berfungsi sebagai model/data, menyimpan atribut
+    - Class MahasiswaDemo : Berfungsi sebagai tempat menjalankan main() untuk membuat dan menguji object.
