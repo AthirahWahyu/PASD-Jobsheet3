@@ -24,13 +24,8 @@ public class MahasiswaDemo3 {
         }
         for (int i = 0; i < 3; i++) {
             System.out.println("Data Mahasiswa ke-" + (i+1));
-            System.out.println("NIM     : "+ arrayOfMahasiswa3[i].nim);
-            System.out.println("Nama    : "+ arrayOfMahasiswa3[i].nama);
-            System.out.println("Kelas   : "+ arrayOfMahasiswa3[i].kelas);
-            System.out.println("IPK     : "+ arrayOfMahasiswa3[i].ipk);
-            System.out.println("-----------------------------------------");
-        }
+            arrayOfMahasiswa3[i].cetakInfo();
         sc.close();
+        }
     }
-} 
-
+}

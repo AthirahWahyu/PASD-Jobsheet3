@@ -138,3 +138,9 @@ _Jawaban:_
     Output : 
 
 ![P1J1](./P1J1.png)
+
+2.  Penjelasan : 
+    - new Mahasiswa3[3] hanya membuat wadah array
+    - Isi array masih null 
+    - Harus new Mahasiswa3() dulu sebelum mengakses atribut
+    - Jika tidak, pasti terjadi NullPointerException 
