@@ -39,3 +39,7 @@ _Jawaban:_
         - main() : method
         - Class Mahasiswa3 hanya punya atribut, tidak punya method, tapi tetap bisa dibuat array of object
     Jadi, tidak wajib ada method. Atribut saja sudah cukup untuk dibuat array of object
+2.  Yang dilakukan kode tersebut yaitu :
+    - Mendeklarasikan array of object : Mahasiswa3[] artinya membuat array yang berisi object bertipe Mahasiswa3.
+    - Membuat array dengan kapasitas 3 : new Mahasiswa3[3] : membuar array yang bisa menampung 3 object Mahasiswa3.
+    - Baris ini belum membuat object Mahasiswa3-nya.
