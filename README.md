@@ -144,3 +144,54 @@ _Jawaban:_
     - Isi array masih null 
     - Harus new Mahasiswa3() dulu sebelum mengakses atribut
     - Jika tidak, pasti terjadi NullPointerException 
+
+## - Percobaan 3 : Constructor Berparameter
+
+## - Percobaan 3 : Verifikasi Hasil Percobaan 
+
+#### Output sebelum dimodifikasi :
+
+![P3J2](./P3J2.png)
+
+#### Output setelah dimodifikasi : 
+
+![Verifikasi3](./Verifikasi3.png)
+
+_Pertanyaan:_
+
+1.  Apakah suatu class dapat memiliki lebih dari 1 constructor? Jika iya, berikan contohnya
+2.  Tambahkan method tambahData() pada class Matakuliah, kemudian gunakan method tersebut di class MatakuliahDemo untuk menambahkan data Matakuliah
+3.  Tambahkan method cetakInfo() pada class Matakuliah, kemudian gunakan method tersebut di class MatakuliahDemo untuk menampilkan data hasil inputan di layar
+4.  Modifikasi kode program pada class MatakuliahDemo agar panjang (jumlah elemen) dari array of object Matakuliah ditentukan oleh user melalui input dengan Scanner
+
+_Jawaban:_
+
+1.  Suatu class bisa memiliki lebih dari 1 constructor. Konsep ini disebut Constructor Overloading.
+    - Syarat : 
+        - Nama constructor harus sama dengan nama class 
+        - Parameter harus berbeda (jumlah atau tipe datanya berbeda)
+    - Contoh pada class Matakuliah3 : 
+    ```java 
+        package Praktikum03;
+
+        public class Matakuliah3 {
+            public String kode;
+            public String nama;
+            public int sks;
+            public int jumlahJam;
+
+            // Constructor 1 (lengkap)
+            public Matakuliah3(String kode, String nama, int sks, int jumlahJam){
+                this.kode = kode;
+                this.nama = nama;
+                this.sks = sks;
+                this.jumlahJam = jumlahJam;
+            }
+            // Constructor 2 (tanpa jumlahJam)
+            public Matakuliah3(String kode, String nama, int sks){
+                this.kode = kode;
+                this.nama = nama;
+                this.sks = sks;
+                this.jumlahJam = sks*2; // misalnya otomatis 2 jam per SKS
+        }
+    ```
