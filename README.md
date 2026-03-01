@@ -100,6 +100,7 @@ _Jawaban:_
     ```
 
     Code class MahasiswaDemo3 : 
+
     ```java
         import java.util.Scanner;
 
@@ -195,3 +196,78 @@ _Jawaban:_
                 this.jumlahJam = sks*2; // misalnya otomatis 2 jam per SKS
         }
     ```
+2.  Code menambahkan method tambahData() pada class Matakuliah3 :
+
+    ```java 
+        package Praktikum03;
+
+        public class Matakuliah3 {
+            public String kode;
+            public String nama;
+            public int sks;
+            public int jumlahJam;
+
+            public Matakuliah3(){
+            }
+
+            public Matakuliah3(String kode, String nama, int sks, int jumlahJam){
+                this.kode = kode;
+                this.nama = nama;
+                this.sks = sks;
+                this.jumlahJam = jumlahJam;
+            }
+
+            public void tambahData(String kode, String nama, int sks, int jumlahJam){
+                this.kode = kode;
+                this.nama = nama;
+                this.sks = sks;
+                this.jumlahJam = jumlahJam;
+            }
+        }
+    ```
+    Code pada class MatakuliahDemo3 :
+
+    ```java 
+        package Praktikum03;
+        import java.util.Scanner;
+
+        public class MatakuliahDemo3 {
+            public static void main(String[] args) {
+                Scanner sc = new Scanner(System.in);
+                Matakuliah3[] arrayOfMatakuliah3 = new Matakuliah3[3];
+                String kode, nama, dummy;
+                int sks, jumlahJam;
+
+                for (int i = 0; i < 3; i++) {
+                    System.out.println("Masukkan Data Matakuliah ke-" + (i+1));
+                    System.out.print("Kode          : ");
+                    kode = sc.nextLine();
+                    System.out.print("Nama          : ");
+                    nama = sc.nextLine();
+                    System.out.print("SKS           : ");
+                    dummy = sc.nextLine();
+                    sks = Integer.parseInt(dummy);
+                    System.out.print("Jumlah jam    : ");
+                    dummy = sc.nextLine();
+                    jumlahJam = Integer.parseInt(dummy);
+                    System.out.println("-----------------------------------------");
+
+                    arrayOfMatakuliah3[i] = new Matakuliah3();
+                    arrayOfMatakuliah3[i].tambahData(kode, nama, sks, jumlahJam);
+                }
+                for (int i = 0; i < 3; i++) {
+                    System.out.println("Masukkan Data Matakuliah ke-" + (i+1));
+                    System.out.println("Kode            : "+ arrayOfMatakuliah3[i].kode);
+                    System.out.println("Nama            : "+ arrayOfMatakuliah3[i].nama);
+                    System.out.println("SKS             : "+ arrayOfMatakuliah3[i].sks);
+                    System.out.println("Jumlah Jam      : "+ arrayOfMatakuliah3[i].jumlahJam);
+                    System.out.println("-----------------------------------------");           
+                }
+                sc.close();
+            }
+        }
+    ``` 
+    
+    Output : 
+
+![P3P2](./P3P2.png)

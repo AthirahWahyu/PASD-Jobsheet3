@@ -22,7 +22,8 @@ public class MatakuliahDemo3 {
             jumlahJam = Integer.parseInt(dummy);
             System.out.println("-----------------------------------------");
 
-            arrayOfMatakuliah3[i] = new Matakuliah3(kode, nama, sks, jumlahJam);
+            arrayOfMatakuliah3[i] = new Matakuliah3();
+            arrayOfMatakuliah3[i].tambahData(kode, nama, sks, jumlahJam);
         }
         for (int i = 0; i < 3; i++) {
             System.out.println("Masukkan Data Matakuliah ke-" + (i+1));
