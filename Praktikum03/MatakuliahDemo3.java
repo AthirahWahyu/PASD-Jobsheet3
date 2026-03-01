@@ -24,13 +24,14 @@ public class MatakuliahDemo3 {
 
             arrayOfMatakuliah3[i] = new Matakuliah3();
             arrayOfMatakuliah3[i].tambahData(kode, nama, sks, jumlahJam);
+            arrayOfMatakuliah3[i].cetakInfo();
         }
         for (int i = 0; i < 3; i++) {
             System.out.println("Masukkan Data Matakuliah ke-" + (i+1));
-            System.out.println("Kode            : "+ arrayOfMatakuliah3[i].kode);
-            System.out.println("Nama            : "+ arrayOfMatakuliah3[i].nama);
-            System.out.println("SKS             : "+ arrayOfMatakuliah3[i].sks);
-            System.out.println("Jumlah Jam      : "+ arrayOfMatakuliah3[i].jumlahJam);
+            System.out.println("Kode        : "+ arrayOfMatakuliah3[i].kode);
+            System.out.println("Nama        : "+ arrayOfMatakuliah3[i].nama);
+            System.out.println("SKS         : "+ arrayOfMatakuliah3[i].sks);
+            System.out.println("Jumlah Jam  : "+ arrayOfMatakuliah3[i].jumlahJam);
             System.out.println("-----------------------------------------");           
         }
         sc.close();
