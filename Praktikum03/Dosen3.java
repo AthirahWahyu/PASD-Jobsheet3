@@ -1,8 +1,9 @@
-package Praktikum03;
+// package Praktikum03;
+
 public class Dosen3 {
     String kode;
     String nama;
-    Boolean jenisKelamin; // true = laki-laki, false = perempuan
+    Boolean jenisKelamin; // true = Pria, false = Wanita
     int usia;
 
     public Dosen3(String kode, String nama, Boolean jenisKelamin, int usia){
@@ -16,7 +17,7 @@ public class Dosen3 {
     public void tampilkanData() {
         System.out.println("Kode Dosen      : " + kode);
         System.out.println("Nama Dosen      : " + nama);
-        System.out.println("Jenis Kelamin   : " + (jenisKelamin ? "Laku-laki" : "Perempuan"));
+        System.out.println("Jenis Kelamin   : " + (jenisKelamin ? "Pria" : "Wanita"));
         System.out.println("Usia            : " + usia);
     }
 }

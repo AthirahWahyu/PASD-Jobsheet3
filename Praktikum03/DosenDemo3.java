@@ -1,4 +1,5 @@
-package Praktikum03;
+// package Praktikum03;
+
 import java.util.Scanner;
 
 public class DosenDemo3 {
@@ -20,17 +21,17 @@ public class DosenDemo3 {
         for (int i = 0; i < jumlah; i++) {
             System.out.println("\nMasukkan Data Dosen ke-" + (i+1));
 
-            System.out.print("Kode               : ");
+            System.out.print("Kode                          : ");
             kode = input.nextLine();
 
-            System.out.print("Nama               : ");
+            System.out.print("Nama                          : ");
             nama = input.nextLine();
 
-            System.out.print("Jenis Kelamin (L/P): ");
+            System.out.print("Jenis Kelamin (Pria / Wanita) : ");
             String jk = input.nextLine();
-            jenisKelamin = jk.equalsIgnoreCase("L");
+            jenisKelamin = jk.equalsIgnoreCase("P");
 
-            System.out.print("Usia               : ");
+            System.out.print("Usia                          : ");
             usia = input.nextInt();
             input.nextLine();
 
@@ -47,6 +48,25 @@ public class DosenDemo3 {
             System.out.println("-----------------------------------------");
             no++;
         }
+
+        // Membuat Object DataDosen3
+        DataDosen3 data = new DataDosen3();
+
+        System.out.println("\n---------- DATA SEMUA DOSEN ----------");
+        data.dataSemuaDosen(arrayOfDosen3);
+
+        System.out.println("\n---------- JUMLAH DOSEN ----------");
+        data.jumlahDosenPerJenisKelamin(arrayOfDosen3);
+
+        System.out.println("\n---------- RATA - RATA USIA ----------");
+        data.rerataUsiaDosenPerJenisKelamin(arrayOfDosen3);
+
+        System.out.println("\n---------- DOSEN PALING TUA ----------");
+        data.infoDosenPalingTua(arrayOfDosen3);
+
+        System.out.println("\n---------- DOSEN PALING MUDA ----------");
+        data.infoDosenPalingMuda(arrayOfDosen3);
+
         input.close();
     }
 }
